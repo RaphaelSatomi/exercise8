@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;    
+}
+.top_right{
+    width: 175px;
+    display: flex;    
+    justify-content: space-between;
+    margin-right: 25px;
+    font-size: 12px;
+}
+.top_right a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);      
+    height: 35px;
+    line-height: 35px;
+}
+.google_app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 14px;
+    width: 14px;
+    padding-top: 10px;
+}
+.google_app .one{    
+    width: 4px;
+    height: 4px;
+    background-color: rgb(68, 68, 68);
+}
+.top_right img{
+    border-radius: 30px;    
+    margin-top: 5px;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+}
+.google_search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.google_search img{
+    margin-bottom: 10px;
+}
+.google_search input{
+    border-radius: 30px;    
+    border: 1px solid rgb(216, 216, 216);
+    padding: 10px;    
+}
+.google_search input:hover{
+    box-shadow: 0px 3px 8px #ccc;
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+.search{
+    width: 255px;
+    display: flex;
+    justify-content: space-between;    
+}
+.search a{
+    font-size: 12px;
+    color: #5F6368;
+    text-decoration: none;    
+    padding: 0 13px;    
+    margin: 11px 4px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+.footer{
+    display: flex;
+    color: rgba(0,0,0,.54);
+    font-size: 13px;
+    height: 60px;
+    margin-top: 150px;
+    flex-direction: column;
+}
+.footer_int{    
+    display: flex;
+    flex-direction: column;
+}
+.deep_top{
+    flex: 1;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.deep_bot{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.deep_bot{
+    flex: 1;
+    height: 30px;
+    line-height: 30px;
+}
+.deep_left{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+}
+.deep_right{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+}
+.deep_top,
+.deep_bot{
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px){
+    .footer{
+        margin-top: 650px;
+    }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1440px){
+    .footer{
+        margin-top: 125px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+    .footer{
+        margin-top: 150px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .footer{
+        margin-top: 65px;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .footer{
+        margin-top: 65px;
+    }
+    .footer_int{
+        font-size: 10px;
+    }
+    .deep_left{
+        width: 240px;
+    }
+    .deep_right{
+        width: 115px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px){
+    .footer{
+        margin-top: 75px;
+    }
+    .footer_int{
+        font-size: 10px;
+    }
+    .deep_top{
+        height: 20px;
+        line-height: 20px;
+    }
+    .deep_bot{
+        height: 20px;
+        line-height: 20px;
+    }
+    .deep_left{
+        width: 240px;
+    }
+    .deep_right{
+        width: 115px;
+    }
+    .google_search img{
+        width: 200px;
+        height: 80px;
+    }
+    .google_search input{
+        width: 300px;
+    }
+    .search{
+        width: 217px;
+    }
+    .search a{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px){
+    .footer{
+        margin-top: 75px;
+    }
+    .footer_int{
+        font-size: 10px;
+    }
+    .deep_top{
+        height: 20px;
+        line-height: 20px;
+    }
+    .deep_bot{       
+        height: 50px; 
+        display: flex;
+        flex-direction: column;        
+    }
+    .deep_left{
+        height: 20px;
+        line-height: 20px;
+        width: 240px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+    .deep_right{
+        height: 20px;
+        line-height: 20px;
+        width: 115px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+    .google_search{
+        margin-bottom: 10px;
+    }
+    .google_search img{
+        width: 200px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    .google_search input{
+        width: 300px;
+        padding: 5px;
+    }
+    .search{
+        width: 217px;
+    }
+    .search a{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .footer{
+        margin-top: 75px;
+    }
+    .footer_int{
+        font-size: 10px;
+    }
+    .deep_top{
+        height: 20px;
+        line-height: 20px;
+    }
+    .deep_bot{       
+        height: 50px; 
+        display: flex;
+        flex-direction: column;        
+    }
+    .deep_left{
+        height: 20px;
+        line-height: 20px;
+        width: 240px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+    .deep_right{
+        height: 20px;
+        line-height: 20px;
+        width: 115px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+    .google_search{
+        margin-bottom: 2px;
+    }
+    .google_search img{
+        width: 150px;
+        height: 70px;
+        margin: 0;
+    }
+    .google_search input{
+        width: 250px;
+        padding: 5px;        
+    }
+    .search{
+        width: 190px;
+    }
+    .search a{
+        font-size: 8px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
